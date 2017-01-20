@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:toolbar="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_zhifu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.gjj.gd.materialdesign_v7.toolbar.JichuActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/color_0176da"
+        toolbar:logo="@mipmap/ic_launcher"
+        toolbar:navigationIcon="@mipmap/ic_drawer_home"
+        toolbar:subtitle="123"
+        toolbar:title="112"
+        toolbar:popupTheme="@style/Theme.ToolBar.Base"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/custom"/>
+
+    </android.support.v7.widget.Toolbar>
+
+</LinearLayout>
