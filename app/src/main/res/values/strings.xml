@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">MaterialDesign_V7</string>
-    <string name="main_toolbar">toolbar 实例</string>
+    <string name="main_toolbar">toolbar 基本使用</string>
     <string name="custom">clock</string>
     <string name="menu_search">搜索</string>
     <string name="menu_notifications">通知</string>
@@ -11,4 +11,16 @@
     <string name="menu_setting">设置</string>
     <string name="menu_about">关于</string>
     <string name="home_page">首页</string>
+    <string name="colorpalette">Color Palette</string>
+    <string name="material_design">material design</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string-array name="menu_title">
+        <item>立即欣赏</item>
+        <item>我的乐库</item>
+        <item>播放列表</item>
+    </string-array>
 </resources>
