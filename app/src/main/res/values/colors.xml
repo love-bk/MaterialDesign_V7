@@ -19,4 +19,6 @@
     <color name="material_blue_700">#00796B</color>
     <color name="material_green_A200">#FD87A9</color>
     <color name="state_menu_item_selected">#97029789</color>
+    <color name="color_96c1ec">#96c1ec</color>
+    <color name="color_c6cace">#c6cace</color>
 </resources>

@@ -24,8 +24,12 @@
             android:name=".ColorPaletteActivity"
             android:theme="@style/AppTheme">
         </activity>
-        <activity android:name=".toolbar.ToolbarInstance1Activity"
-                  android:theme="@style/Theme.Toolbar.ZhiHu">
+        <activity
+            android:name=".toolbar.ToolbarInstance1Activity"
+            android:theme="@style/Theme.Toolbar.ZhiHu">
+        </activity>
+        <activity android:name=".toolbar.CustomMenuLayoutActivity"
+        android:theme="@style/Theme.Toolbar.ZhiHu" >
         </activity>
     </application>
 

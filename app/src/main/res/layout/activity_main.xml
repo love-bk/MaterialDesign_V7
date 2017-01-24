@@ -40,7 +40,13 @@
             <Button
                 android:id="@+id/toolbar_btn01"
                 style="@style/Btn_Style"
-                android:text="toolbar实例1" />
+                android:text="@string/toolbar_1" />
+             <Button
+                android:id="@+id/toolbar_btn02"
+                style="@style/Btn_Style"
+                android:text="@string/toolbar_2" />
+
+
 
 
 
