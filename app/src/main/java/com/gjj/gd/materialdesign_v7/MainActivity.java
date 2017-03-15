@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.gjj.gd.materialdesign_v7.constraintlayout.ConstraintlayoutActivity;
+import com.gjj.gd.materialdesign_v7.tablayout.TabLayoutActivity;
 import com.gjj.gd.materialdesign_v7.toolbar.ToolbarInstance2Activity;
 import com.gjj.gd.materialdesign_v7.toolbar.JichuActivity;
 import com.gjj.gd.materialdesign_v7.toolbar.ToolbarInstance1Activity;
@@ -36,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     @OnClick({R.id.toolbar_btn, R.id.zhifu_btn,R.id.color_btn,R.id.toolbar_btn01
-            ,R.id.toolbar_btn02,R.id.toolbar_btn03,R.id.constraintlayout_btn01})
+            ,R.id.toolbar_btn02,R.id.toolbar_btn03,R.id.constraintlayout_btn01,R.id.tablayout_btn01})
     public void onClick(View view) {
         Intent intent = null;
         switch (view.getId()) {
@@ -61,6 +62,10 @@ public class MainActivity extends AppCompatActivity {
             case R.id.constraintlayout_btn01:
                 intent = new Intent(this, ConstraintlayoutActivity.class);
                 break;
+             case R.id.tablayout_btn01:
+                intent = new Intent(this, TabLayoutActivity.class);
+                break;
+
 
 
 

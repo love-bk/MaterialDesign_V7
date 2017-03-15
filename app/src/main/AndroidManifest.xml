@@ -38,6 +38,8 @@
         </activity>
         <activity android:name=".constraintlayout.ConstraintlayoutActivity">
         </activity>
+        <activity android:name=".tablayout.TabLayoutActivity">
+        </activity>
     </application>
 
 </manifest>
