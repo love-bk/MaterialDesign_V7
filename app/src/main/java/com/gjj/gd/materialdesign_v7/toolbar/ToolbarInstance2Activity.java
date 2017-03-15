@@ -14,7 +14,7 @@ import com.gjj.gd.materialdesign_v7.R;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class CustomMenuLayoutActivity extends AppCompatActivity implements View.OnClickListener {
+public class ToolbarInstance2Activity extends AppCompatActivity implements View.OnClickListener {
 
     @BindView(R.id.toolbar)
     Toolbar mToolbar;
@@ -30,10 +30,10 @@ public class CustomMenuLayoutActivity extends AppCompatActivity implements View.
             public boolean onMenuItemClick(android.view.MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.action_edit:
-                        Toast.makeText(CustomMenuLayoutActivity.this, "点击了编辑", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ToolbarInstance2Activity.this, "点击了编辑", Toast.LENGTH_SHORT).show();
                         break;
                     case R.id.action_share:
-                        Toast.makeText(CustomMenuLayoutActivity.this, "点击了分享", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ToolbarInstance2Activity.this, "点击了分享", Toast.LENGTH_SHORT).show();
                         break;
                     case R.id.action_overflow:
                         //弹出自定义overflow

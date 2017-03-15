@@ -45,9 +45,27 @@
                 android:id="@+id/toolbar_btn02"
                 style="@style/Btn_Style"
                 android:text="@string/toolbar_2" />
+            <Button
+                android:id="@+id/toolbar_btn03"
+                style="@style/Btn_Style"
+                android:text="@string/toolbar_3" />
 
+            <TextView
+                style="@style/Tvt_Style"
+                android:text="@string/constraintlayout"/>
+            <Button
+                android:id="@+id/constraintlayout_btn01"
+                style="@style/Btn_Style"
+                android:text="constraintlayout实例1"/>
 
-
+            <TextView
+                style="@style/Tvt_Style"
+                android:text="@string/tablayout"
+                />
+            <Button
+                android:id="@+id/tablayout_btn01"
+                style="@style/Btn_Style"
+                android:text="tablayout实例1"/>
 
 
 

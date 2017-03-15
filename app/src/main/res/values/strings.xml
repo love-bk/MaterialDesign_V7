@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MaterialDesign_V7</string>
+    <string name="app_name">Android高级UI</string>
     <string name="main_toolbar">toolbar 基本使用</string>
     <string name="custom">clock</string>
     <string name="menu_search">搜索</string>
@@ -24,8 +24,16 @@
     <string name="action_edit">编辑</string>
     <string name="action_share">分享</string>
     <string name="action_more">更多</string>
-    <string name="toolbar_1">toolbar实例1</string>
-    <string name="toolbar_2">toolbar实例2</string>
+    <string name="toolbar_1">toolbar与DrawerLayout结合使用1</string>
+    <string name="toolbar_2">自定义菜单布局（使用PopupWindow）</string>
+    <string name="toolbar_3">toolbar与DrawerLayout结合使用2</string>
+    <string name="action_search">action_search</string>
+    <string name="action_setting">action_setting</string>
+    <string name="constraintlayout">ConstraintLayout</string>
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+    <string name="sideslip">侧滑菜单内容</string>
+    <string name="tablayout">tablayout</string>
     <string-array name="menu_title">
         <item>立即欣赏</item>
         <item>我的乐库</item>

@@ -6,9 +6,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-import com.gjj.gd.materialdesign_v7.toolbar.CustomMenuLayoutActivity;
+import com.gjj.gd.materialdesign_v7.constraintlayout.ConstraintlayoutActivity;
+import com.gjj.gd.materialdesign_v7.toolbar.ToolbarInstance2Activity;
 import com.gjj.gd.materialdesign_v7.toolbar.JichuActivity;
 import com.gjj.gd.materialdesign_v7.toolbar.ToolbarInstance1Activity;
+import com.gjj.gd.materialdesign_v7.toolbar.ToolbarInstance3Activity;
 import com.gjj.gd.materialdesign_v7.toolbar.ZhifuActivity;
 
 import butterknife.BindView;
@@ -33,7 +35,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    @OnClick({R.id.toolbar_btn, R.id.zhifu_btn,R.id.color_btn,R.id.toolbar_btn01,R.id.toolbar_btn02})
+    @OnClick({R.id.toolbar_btn, R.id.zhifu_btn,R.id.color_btn,R.id.toolbar_btn01
+            ,R.id.toolbar_btn02,R.id.toolbar_btn03,R.id.constraintlayout_btn01})
     public void onClick(View view) {
         Intent intent = null;
         switch (view.getId()) {
@@ -50,8 +53,16 @@ public class MainActivity extends AppCompatActivity {
                 intent = new Intent(this, ToolbarInstance1Activity.class);
                 break;
             case R.id.toolbar_btn02:
-                intent = new Intent(this, CustomMenuLayoutActivity.class);
+                intent = new Intent(this, ToolbarInstance2Activity.class);
                 break;
+            case R.id.toolbar_btn03:
+                intent = new Intent(this, ToolbarInstance3Activity.class);
+                break;
+            case R.id.constraintlayout_btn01:
+                intent = new Intent(this, ConstraintlayoutActivity.class);
+                break;
+
+
 
 
 
