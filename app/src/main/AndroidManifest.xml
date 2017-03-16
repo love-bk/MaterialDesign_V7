@@ -40,6 +40,8 @@
         </activity>
         <activity android:name=".tablayout.TabLayoutActivity">
         </activity>
+        <activity android:name=".tablayout.TbCustomeTabViewActivity">
+        </activity>
     </application>
 
 </manifest>

@@ -7,7 +7,7 @@
     <color name="color_0176da">#0176da</color>
     <color name="color_005eaa">#005eaa</color>
     <color name="color_red">#ff0000</color>
-    <color name="color_43d28d">#85c4e4</color>
+    <color name="color_43d28d">#47b4ec</color>
     <color name="color_f5f5f5">#f5f5f5</color>
     <color name="color_e81d62">#e81d62</color>
     <color name="color_4bae4f">#4bae4f</color>
@@ -15,10 +15,12 @@
     <color name="color_512da8">#512da8</color>
     <color name="color_cd3e3a">#cd3e3a</color>
 
-    <color name="material_blue_500">#009688</color>
+    <color name="material_blue_500">#f163aa</color>
+    <!--<color name="material_blue_500">#009688</color>-->
     <color name="material_blue_700">#00796B</color>
     <color name="material_green_A200">#FD87A9</color>
     <color name="state_menu_item_selected">#97029789</color>
     <color name="color_96c1ec">#96c1ec</color>
     <color name="color_c6cace">#c6cace</color>
+    <color name="color_content">#47b4ec</color>
 </resources>

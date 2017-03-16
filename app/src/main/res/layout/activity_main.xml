@@ -56,7 +56,7 @@
             <Button
                 android:id="@+id/constraintlayout_btn01"
                 style="@style/Btn_Style"
-                android:text="constraintlayout实例1"/>
+                android:text="@string/constraintlayout_instance1"/>
 
             <TextView
                 style="@style/Tvt_Style"
@@ -65,7 +65,17 @@
             <Button
                 android:id="@+id/tablayout_btn01"
                 style="@style/Btn_Style"
-                android:text="tablayout实例1"/>
+                android:text="@string/tablayout_base_user"/>
+            <Button
+                android:id="@+id/tablayout_btn02"
+                style="@style/Btn_Style"
+                android:text="@string/display_icon"/>
+            <Button
+                android:id="@+id/tablayout_btn03"
+                style="@style/Btn_Style"
+                android:text="@string/tablayout_custome_tab"/>
+
+
 
 
 
