@@ -64,7 +64,8 @@
             android:name=".fab.FabActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         </activity>
-        <activity android:name=".appbarlayout.AppbarLayoutActivity">
+        <activity android:name=".appbarlayout.AppbarLayoutActivity"
+                  android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         </activity>
     </application>
 
