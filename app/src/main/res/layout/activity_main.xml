@@ -13,7 +13,15 @@
         android:padding="20dp"
         android:orientation="vertical">
 
+        <TextView
+            android:id="@+id/tv_appbar"
+            style="@style/Button_style"
+            android:text="@string/appbar_study"/>
 
+        <TextView
+            android:id="@+id/tv_fab"
+            style="@style/Button_style"
+            android:text="@string/fab_study"/>
         <TextView
             android:id="@+id/tv_cardview"
             style="@style/Button_style"

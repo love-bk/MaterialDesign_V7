@@ -6,9 +6,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Toast;
 
+import com.gjj.gd.materialdesign_v7.appbarlayout.AppbarLayoutActivity;
 import com.gjj.gd.materialdesign_v7.cardview.CardViewActivity;
 import com.gjj.gd.materialdesign_v7.constraintlayout.ConstraintlayoutActivity;
 import com.gjj.gd.materialdesign_v7.coordinatorlayout.CoordinatorLayoutActivity;
+import com.gjj.gd.materialdesign_v7.fab.FabActivity;
 import com.gjj.gd.materialdesign_v7.snackbar.SnackBarActivity;
 import com.gjj.gd.materialdesign_v7.tablayout.AllTabLayoutActivity;
 import com.gjj.gd.materialdesign_v7.toolbar.ToolBarActivity;
@@ -30,8 +32,8 @@ public class MainActivity extends AppCompatActivity {
 
 
     @OnClick({R.id.tv_col, R.id.tv_toolbar, R.id.tv_tablayout,
-            R.id.constraintlayout_tv01,
-            R.id.color_tv,R.id.tv_snackbar,R.id.tv_cardview})
+            R.id.constraintlayout_tv01,R.id.tv_appbar,
+            R.id.color_tv,R.id.tv_snackbar,R.id.tv_cardview,R.id.tv_fab})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.tv_col:
@@ -55,6 +57,14 @@ public class MainActivity extends AppCompatActivity {
             case R.id.tv_cardview:
                 intent = new Intent(this, CardViewActivity.class);
                 break;
+            case R.id.tv_fab:
+                intent = new Intent(this, FabActivity.class);
+                break;
+            case R.id.tv_appbar:
+                intent = new Intent(this, AppbarLayoutActivity.class);
+                break;
+
+
         }
 
         if (intent != null) {

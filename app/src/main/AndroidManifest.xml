@@ -60,6 +60,12 @@
         </activity>
         <activity android:name=".cardview.CardViewActivity">
         </activity>
+        <activity
+            android:name=".fab.FabActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity android:name=".appbarlayout.AppbarLayoutActivity">
+        </activity>
     </application>
 
 </manifest>
