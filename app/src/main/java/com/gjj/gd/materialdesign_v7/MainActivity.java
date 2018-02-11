@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Toast;
 
+import com.gjj.gd.materialdesign_v7.cardview.CardViewActivity;
 import com.gjj.gd.materialdesign_v7.constraintlayout.ConstraintlayoutActivity;
 import com.gjj.gd.materialdesign_v7.coordinatorlayout.CoordinatorLayoutActivity;
 import com.gjj.gd.materialdesign_v7.snackbar.SnackBarActivity;
@@ -28,8 +29,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    @OnClick({R.id.tv_col, R.id.tv_toolbar, R.id.tv_tablayout, R.id.constraintlayout_tv01,
-            R.id.color_tv,R.id.tv_snackbar})
+    @OnClick({R.id.tv_col, R.id.tv_toolbar, R.id.tv_tablayout,
+            R.id.constraintlayout_tv01,
+            R.id.color_tv,R.id.tv_snackbar,R.id.tv_cardview})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.tv_col:
@@ -50,8 +52,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.tv_snackbar:
                 intent = new Intent(this, SnackBarActivity.class);
                 break;
-
-
+            case R.id.tv_cardview:
+                intent = new Intent(this, CardViewActivity.class);
+                break;
         }
 
         if (intent != null) {

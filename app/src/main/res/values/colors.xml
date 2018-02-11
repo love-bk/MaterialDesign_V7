@@ -28,4 +28,8 @@
     <color name="strong">#FF5B26</color>
     <color name="gray">#ddd</color>
 
+    <color name="black">#060306</color>
+    <color name="orange">#f6a71f</color>
+    <color name="DarkCyan">#028a89</color>
+    <color name="white">#fff</color>
 </resources>

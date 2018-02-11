@@ -39,6 +39,7 @@
     <string name="tablayout_custome_tab">tablayout自定义tab样式</string>
     <string name="display_icon">tab上显示图标</string>
     <string name="coordinatorlayout_study">CoordinatorLayout的学习</string>
+    <string name="cardview_study">CardView的学习</string>
     <string name="toolbar_study">ToolBar的学习</string>
     <string name="tablayout_study">TabLayout的学习</string>
     <string name="snackbar_study">SnackBar的学习</string>

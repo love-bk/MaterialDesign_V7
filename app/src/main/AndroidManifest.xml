@@ -58,6 +58,8 @@
         </activity>
         <activity android:name=".snackbar.SnackBarActivity">
         </activity>
+        <activity android:name=".cardview.CardViewActivity">
+        </activity>
     </application>
 
 </manifest>
