@@ -4,28 +4,19 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Button;
+import android.widget.Toast;
 
 import com.gjj.gd.materialdesign_v7.constraintlayout.ConstraintlayoutActivity;
-import com.gjj.gd.materialdesign_v7.tablayout.TabLayoutActivity;
-import com.gjj.gd.materialdesign_v7.tablayout.TbCustomeTabViewActivity;
-import com.gjj.gd.materialdesign_v7.toolbar.ToolbarInstance2Activity;
-import com.gjj.gd.materialdesign_v7.toolbar.JichuActivity;
-import com.gjj.gd.materialdesign_v7.toolbar.ToolbarInstance1Activity;
-import com.gjj.gd.materialdesign_v7.toolbar.ToolbarInstance3Activity;
-import com.gjj.gd.materialdesign_v7.toolbar.ZhifuActivity;
+import com.gjj.gd.materialdesign_v7.coordinatorlayout.CoordinatorLayoutActivity;
+import com.gjj.gd.materialdesign_v7.snackbar.SnackBarActivity;
+import com.gjj.gd.materialdesign_v7.tablayout.AllTabLayoutActivity;
+import com.gjj.gd.materialdesign_v7.toolbar.ToolBarActivity;
 
-import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class MainActivity extends AppCompatActivity {
-
-    @BindView(R.id.toolbar_btn)
-    Button mToolbarBtn;
-    @BindView(R.id.zhifu_btn)
-    Button mZhifuBtn;
-
+    private Intent intent = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,54 +28,32 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    @OnClick({R.id.toolbar_btn, R.id.zhifu_btn,R.id.color_btn,R.id.toolbar_btn01
-            ,R.id.toolbar_btn02,R.id.toolbar_btn03,R.id.constraintlayout_btn01,
-            R.id.tablayout_btn01,R.id.tablayout_btn02,R.id.tablayout_btn03})
-    public void onClick(View view) {
-        Intent intent = null;
+    @OnClick({R.id.tv_col, R.id.tv_toolbar, R.id.tv_tablayout, R.id.constraintlayout_tv01,
+            R.id.color_tv,R.id.tv_snackbar})
+    public void onViewClicked(View view) {
         switch (view.getId()) {
-            case R.id.toolbar_btn:
-                intent = new Intent(this, JichuActivity.class);
+            case R.id.tv_col:
+                intent = new Intent(this, CoordinatorLayoutActivity.class);
                 break;
-            case R.id.zhifu_btn:
-                intent = new Intent(this, ZhifuActivity.class);
+            case R.id.tv_toolbar:
+                intent = new Intent(this, ToolBarActivity.class);
                 break;
-            case R.id.color_btn:
-                intent = new Intent(this, ColorPaletteActivity.class);
+            case R.id.tv_tablayout:
+                intent = new Intent(this, AllTabLayoutActivity.class);
                 break;
-            case R.id.toolbar_btn01:
-                intent = new Intent(this, ToolbarInstance1Activity.class);
-                break;
-            case R.id.toolbar_btn02:
-                intent = new Intent(this, ToolbarInstance2Activity.class);
-                break;
-            case R.id.toolbar_btn03:
-                intent = new Intent(this, ToolbarInstance3Activity.class);
-                break;
-            case R.id.constraintlayout_btn01:
+            case R.id.constraintlayout_tv01:
                 intent = new Intent(this, ConstraintlayoutActivity.class);
                 break;
-             case R.id.tablayout_btn01:
-                intent = new Intent(this, TabLayoutActivity.class);
+            case R.id.color_tv:
+                intent = new Intent(this, ColorPaletteActivity.class);
                 break;
-             case R.id.tablayout_btn02:
-
-                intent = new Intent(this, TbCustomeTabViewActivity.class);
-                 intent.putExtra(Constant.JUMP_FLAG,"1");
+            case R.id.tv_snackbar:
+                intent = new Intent(this, SnackBarActivity.class);
                 break;
-             case R.id.tablayout_btn03:
-                intent = new Intent(this, TbCustomeTabViewActivity.class);
-                 intent.putExtra(Constant.JUMP_FLAG,"2");
-                break;
-
-
-
-
-
-
 
 
         }
+
         if (intent != null) {
             startActivity(intent);
         }

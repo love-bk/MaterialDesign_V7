@@ -35,9 +35,13 @@
     <string name="sideslip">侧滑菜单内容</string>
     <string name="tablayout">tablayout</string>
     <string name="tablayout_base_user">tablayout基本使用</string>
-    <string name="constraintlayout_instance1">constraintlayout实例1</string>
+    <string name="constraintlayout_study">constraintlayout的学习</string>
     <string name="tablayout_custome_tab">tablayout自定义tab样式</string>
     <string name="display_icon">tab上显示图标</string>
+    <string name="coordinatorlayout_study">CoordinatorLayout的学习</string>
+    <string name="toolbar_study">ToolBar的学习</string>
+    <string name="tablayout_study">TabLayout的学习</string>
+    <string name="snackbar_study">SnackBar的学习</string>
     <string-array name="menu_title">
         <item>立即欣赏</item>
         <item>我的乐库</item>

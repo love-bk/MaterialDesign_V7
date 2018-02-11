@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gjj.gd.materialdesign_v7.coordinatorlayout.CoordinatorLayoutActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <TextView
+            android:id="@+id/tv_snackbar"
+            style="@style/Button_style"
+            android:text="结合Snackbar使用"/>
+        <TextView
+            android:id="@+id/tv_appbarlayout"
+            style="@style/Button_style"
+            android:text="结合AppBarLayout使用"/>
+
+        <TextView
+            android:id="@+id/tv_behavior1"
+            style="@style/Button_style"
+            android:text="自定义Behavior的最简单的例子"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.gjj.gd.materialdesign_v7.snackbar.SnackBarActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+        <TextView
+            android:id="@+id/snackbar1"
+            style="@style/Button_style"
+            android:text="普通的SnackBark"/>
+        <TextView
+            android:id="@+id/snackbar2"
+            style="@style/Button_style"
+            android:text="右侧带按钮的SnackBark"/>
+        <TextView
+            android:id="@+id/snackbar3"
+            style="@style/Button_style"
+            android:text="自定义SnackBark的背景字体颜色"/>
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_gravity="bottom|right"/>
+
+</android.support.design.widget.CoordinatorLayout>

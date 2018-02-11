@@ -1,87 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center_horizontal"
-    tools:context="com.gjj.gd.materialdesign_v7.MainActivity">
+    >
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center">
-            <TextView
-               style="@style/Tvt_Style"
-                android:text="@string/material_design"/>
-            <Button
-                android:id="@+id/color_btn"
-                style="@style/Btn_Style"
-                android:text="@string/colorpalette" />
-            <TextView
-                style="@style/Tvt_Style"
-                android:text="@string/toolbar"
-                />
-            <Button
-                android:id="@+id/toolbar_btn"
-                style="@style/Btn_Style"
-                android:text="@string/main_toolbar"
-                />
-            <Button
-                android:id="@+id/zhifu_btn"
-                style="@style/Btn_Style"
-                android:text="@string/zhihu_toolbar" />
-
-            <Button
-                android:id="@+id/toolbar_btn01"
-                style="@style/Btn_Style"
-                android:text="@string/toolbar_1" />
-             <Button
-                android:id="@+id/toolbar_btn02"
-                style="@style/Btn_Style"
-                android:text="@string/toolbar_2" />
-            <Button
-                android:id="@+id/toolbar_btn03"
-                style="@style/Btn_Style"
-                android:text="@string/toolbar_3" />
-
-            <TextView
-                style="@style/Tvt_Style"
-                android:text="@string/constraintlayout"/>
-            <Button
-                android:id="@+id/constraintlayout_btn01"
-                style="@style/Btn_Style"
-                android:text="@string/constraintlayout_instance1"/>
-
-            <TextView
-                style="@style/Tvt_Style"
-                android:text="@string/tablayout"
-                />
-            <Button
-                android:id="@+id/tablayout_btn01"
-                style="@style/Btn_Style"
-                android:text="@string/tablayout_base_user"/>
-            <Button
-                android:id="@+id/tablayout_btn02"
-                style="@style/Btn_Style"
-                android:text="@string/display_icon"/>
-            <Button
-                android:id="@+id/tablayout_btn03"
-                style="@style/Btn_Style"
-                android:text="@string/tablayout_custome_tab"/>
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="20dp"
+        android:orientation="vertical">
 
 
 
+        <TextView
+            android:id="@+id/tv_col"
+            style="@style/Button_style"
+            android:text="@string/coordinatorlayout_study"/>
+        <TextView
+            android:id="@+id/tv_toolbar"
+            style="@style/Button_style"
+            android:text="@string/toolbar_study"/>
+
+        <TextView
+            android:id="@+id/tv_snackbar"
+            style="@style/Button_style"
+            android:text="@string/snackbar_study"/>
 
 
-        </LinearLayout>
 
-    </ScrollView>
+        <TextView
+            android:id="@+id/tv_tablayout"
+            style="@style/Button_style"
+            android:text="@string/tablayout_study"/>
 
+        <TextView
+            android:id="@+id/constraintlayout_tv01"
+            style="@style/Button_style"
+            android:text="@string/constraintlayout_study"/>
+        <TextView
+            android:id="@+id/color_tv"
+            style="@style/Button_style"
+            android:text="@string/colorpalette"/>
 
-</LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
