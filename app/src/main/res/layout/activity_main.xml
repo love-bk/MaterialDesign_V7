@@ -14,6 +14,10 @@
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/tv_til"
+            style="@style/Button_style"
+            android:text="@string/til_study"/>
+        <TextView
             android:id="@+id/tv_appbar"
             style="@style/Button_style"
             android:text="@string/appbar_study"/>

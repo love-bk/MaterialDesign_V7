@@ -2,7 +2,7 @@
 <resources>
     <color name="colorPrimary">#1E8AE8</color>
     <color name="colorPrimaryDark">#176EB9</color>
-    <color name="colorAccent">#FFB805</color>
+    <color name="colorAccent">#1E8AE8</color>
     <color name="color_31c27c">#31c27c</color>
     <color name="color_0176da">#0176da</color>
     <color name="color_005eaa">#005eaa</color>
@@ -32,4 +32,6 @@
     <color name="orange">#f6a71f</color>
     <color name="DarkCyan">#028a89</color>
     <color name="white">#fff</color>
+    <color name="colorHint">#bcb8b8</color>
+    <color name="color_blue">#1E8AE8</color>
 </resources>

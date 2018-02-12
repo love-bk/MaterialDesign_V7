@@ -42,6 +42,7 @@
     <string name="cardview_study">CardView的学习</string>
     <string name="fab_study">FloatingActionButton的学习</string>
     <string name="appbar_study">AppBarLayout的学习</string>
+    <string name="til_study">TextInputLayout的学习</string>
     <string name="toolbar_study">ToolBar的学习</string>
     <string name="tablayout_study">TabLayout的学习</string>
     <string name="snackbar_study">SnackBar的学习</string>

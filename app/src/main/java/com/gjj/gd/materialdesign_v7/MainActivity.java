@@ -13,6 +13,7 @@ import com.gjj.gd.materialdesign_v7.coordinatorlayout.CoordinatorLayoutActivity;
 import com.gjj.gd.materialdesign_v7.fab.FabActivity;
 import com.gjj.gd.materialdesign_v7.snackbar.SnackBarActivity;
 import com.gjj.gd.materialdesign_v7.tablayout.AllTabLayoutActivity;
+import com.gjj.gd.materialdesign_v7.textinputlayout.TextInputLayoutActivity;
 import com.gjj.gd.materialdesign_v7.toolbar.ToolBarActivity;
 
 import butterknife.ButterKnife;
@@ -32,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     @OnClick({R.id.tv_col, R.id.tv_toolbar, R.id.tv_tablayout,
-            R.id.constraintlayout_tv01,R.id.tv_appbar,
+            R.id.constraintlayout_tv01,R.id.tv_appbar,R.id.tv_til,
             R.id.color_tv,R.id.tv_snackbar,R.id.tv_cardview,R.id.tv_fab})
     public void onViewClicked(View view) {
         switch (view.getId()) {
@@ -63,8 +64,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.tv_appbar:
                 intent = new Intent(this, AppbarLayoutActivity.class);
                 break;
-
-
+            case R.id.tv_til:
+                intent = new Intent(this, TextInputLayoutActivity.class);
+                break;
         }
 
         if (intent != null) {
