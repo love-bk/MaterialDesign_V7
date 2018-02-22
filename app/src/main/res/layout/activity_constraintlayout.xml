@@ -1,14 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_constraintlayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.gjj.gd.materialdesign_v7.constraintlayout.ConstraintlayoutActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
 
-</RelativeLayout>
+    >
+    <Button
+        android:id="@+id/btn_a"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:text="B"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="#fd368d"
+        tools:layout_editor_absoluteY="0dp"/>
+    <View
+        android:id="@+id/view"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/btn_a"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="40dp"/>
+    <Button
+        android:text="A"
+        android:layout_height="200dp"
+        android:layout_width="wrap_content"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@color/colorPrimary"
+        app:layout_constraintTop_toBottomOf="@id/view"/>
+
+</android.support.constraint.ConstraintLayout>
