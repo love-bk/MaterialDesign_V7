@@ -62,4 +62,10 @@
         <item>我的乐库</item>
         <item>播放列表</item>
     </string-array>
+
+    <string name="tip_drag">长按可以拖拽排序,点击删除</string>
+    <string name="my_cahnnel">我的频道</string>
+    <string name="other_channel">点击添加更多频道</string>
+    <string name="edit">编辑</string>
+    <string name="finish">完成</string>
 </resources>

@@ -10,4 +10,7 @@ public class Constant {
     public static final String TABLAYOUT_XSTB = "displayIcon";
     public static final String JUMP_FLAG = "跳转标志";
 
+    public static final String CHANNEL = "channel";
+    public static final String OTHER_CHANNEL = "其他频道";
+
 }

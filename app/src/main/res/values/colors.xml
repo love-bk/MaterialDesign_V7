@@ -34,4 +34,9 @@
     <color name="white">#fff</color>
     <color name="colorHint">#bcb8b8</color>
     <color name="color_blue">#1E8AE8</color>
+    <color name="channel_item_color">#7e7e7f</color>
+    <color name="red_500">#ef4836</color>
+    <color name="tip">#9c9c9c</color>
+    <color name="bg_focus">#DDDDDD</color>
+
 </resources>

@@ -12,7 +12,10 @@
         android:gravity="center"
         android:padding="20dp"
         android:orientation="vertical">
-
+        <TextView
+            android:id="@+id/tv_rv"
+            style="@style/Button_style"
+            android:text="RecyclerView的学习"/>
         <TextView
             android:id="@+id/tv_til"
             style="@style/Button_style"
