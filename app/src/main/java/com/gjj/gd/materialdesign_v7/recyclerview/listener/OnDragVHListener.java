@@ -1,4 +1,4 @@
-package com.gjj.gd.materialdesign_v7.recyclerview;
+package com.gjj.gd.materialdesign_v7.recyclerview.listener;
 
 public interface OnDragVHListener {
     /**

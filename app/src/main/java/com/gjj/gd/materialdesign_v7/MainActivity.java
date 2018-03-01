@@ -12,6 +12,7 @@ import com.gjj.gd.materialdesign_v7.constraintlayout.ConstraintlayoutActivity;
 import com.gjj.gd.materialdesign_v7.coordinatorlayout.CoordinatorLayoutActivity;
 import com.gjj.gd.materialdesign_v7.fab.FabActivity;
 import com.gjj.gd.materialdesign_v7.recyclerview.ClassifyActivity;
+import com.gjj.gd.materialdesign_v7.recyclerview.RecyclerViewMainActivity;
 import com.gjj.gd.materialdesign_v7.snackbar.SnackBarActivity;
 import com.gjj.gd.materialdesign_v7.tablayout.AllTabLayoutActivity;
 import com.gjj.gd.materialdesign_v7.textinputlayout.TextInputLayoutActivity;
@@ -39,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.tv_rv:
-                intent = new Intent(this, ClassifyActivity.class);
+                intent = new Intent(this, RecyclerViewMainActivity.class);
                 break;
             case R.id.tv_col:
                 intent = new Intent(this, CoordinatorLayoutActivity.class);

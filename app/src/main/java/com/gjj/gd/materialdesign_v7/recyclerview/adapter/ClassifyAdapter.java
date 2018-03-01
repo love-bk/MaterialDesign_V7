@@ -1,4 +1,4 @@
-package com.gjj.gd.materialdesign_v7.recyclerview;
+package com.gjj.gd.materialdesign_v7.recyclerview.adapter;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -20,6 +20,8 @@ import android.widget.TextView;
 
 import com.gjj.gd.materialdesign_v7.R;
 import com.gjj.gd.materialdesign_v7.bean.TagBean;
+import com.gjj.gd.materialdesign_v7.recyclerview.listener.OnDragVHListener;
+import com.gjj.gd.materialdesign_v7.recyclerview.listener.OnItemMoveListener;
 
 import java.util.ArrayList;
 import java.util.List;

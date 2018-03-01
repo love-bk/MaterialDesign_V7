@@ -11,6 +11,8 @@ import android.widget.Toast;
 
 import com.gjj.gd.materialdesign_v7.R;
 import com.gjj.gd.materialdesign_v7.bean.TagBean;
+import com.gjj.gd.materialdesign_v7.recyclerview.adapter.ClassifyAdapter;
+import com.gjj.gd.materialdesign_v7.recyclerview.listener.ItemDragHelperCallback;
 
 import java.util.ArrayList;
 import java.util.List;
