@@ -8,6 +8,7 @@ import android.support.v4.view.MotionEventCompat;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.helper.ItemTouchHelper;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
@@ -22,6 +23,7 @@ import com.gjj.gd.materialdesign_v7.R;
 import com.gjj.gd.materialdesign_v7.bean.TagBean;
 import com.gjj.gd.materialdesign_v7.recyclerview.listener.OnDragVHListener;
 import com.gjj.gd.materialdesign_v7.recyclerview.listener.OnItemMoveListener;
+import com.gjj.gd.materialdesign_v7.util.Logger;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -68,8 +70,9 @@ public class ClassifyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
     private OnMyChannelItemClickListener mChannelItemClickListener;
     private OnCompleteListener mCompleteListener;
     private int selectedType;
+
     public ClassifyAdapter(Context context, ItemTouchHelper helper, List<TagBean> mMyChannelItems,
-                          List<TagBean> mOtherChannelItems,int selectedType) {
+                           List<TagBean> mOtherChannelItems, int selectedType) {
         this.mContext = context;
         this.mInflater = LayoutInflater.from(context);
         this.mItemTouchHelper = helper;
@@ -78,9 +81,15 @@ public class ClassifyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
         this.selectedType = selectedType;
     }
 
+    /**
+     * 根据效果图我们知道该RecyclerView总共包含四种布局
+     *
+     * @param position
+     * @return
+     */
     @Override
     public int getItemViewType(int position) {
-        if (mMyChannelItems == null&&position==1){
+        if (mMyChannelItems == null && position == 1) {
             return TYPE_OTHER_CHANNEL_HEADER;
         }
         if (position == 0) {    // 我的频道 标题部分
@@ -99,7 +108,7 @@ public class ClassifyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
     public RecyclerView.ViewHolder onCreateViewHolder(final ViewGroup parent, int viewType) {
         final View view;
         switch (viewType) {
-            case TYPE_MY_CHANNEL_HEADER:
+            case TYPE_MY_CHANNEL_HEADER://我的频道的头布局
                 view = mInflater.inflate(R.layout.item_my_channel_header, parent, false);
                 final MyChannelHeaderViewHolder holder = new MyChannelHeaderViewHolder(view);
                 holder.tvBtnEdit.setOnClickListener(new View.OnClickListener() {
@@ -119,7 +128,7 @@ public class ClassifyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
                 });
                 return holder;
 
-            case TYPE_MY:
+            case TYPE_MY://我的频道的条目布局
                 view = mInflater.inflate(R.layout.item_my, parent, false);
                 final MyViewHolder myHolder = new MyViewHolder(view);
                 myHolder.imgEdit.setOnClickListener(new View.OnClickListener() {
@@ -131,12 +140,11 @@ public class ClassifyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
                 myHolder.textView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(final View v) {
-//                        if (myHolder.getAdapterPosition()!=1){
                         clickMyChannelItem(myHolder, parent, v);
-//                        }
                     }
                 });
 
+                //我的频道条目的长按事件
                 myHolder.textView.setOnLongClickListener(new View.OnLongClickListener() {
                     @Override
                     public boolean onLongClick(final View v) {
@@ -154,6 +162,7 @@ public class ClassifyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
 
                             }
                         }
+                        //调用ItemTouchHelper的开始拖拽方法
                         mItemTouchHelper.startDrag(myHolder);
                         return true;
                     }
@@ -169,6 +178,7 @@ public class ClassifyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
                                     break;
                                 case MotionEvent.ACTION_MOVE:
                                     if (System.currentTimeMillis() - startTime > SPACE_TIME) {
+                                        //调用ItemTouchHelper的开始拖拽方法
                                         mItemTouchHelper.startDrag(myHolder);
                                     }
                                     break;
@@ -184,14 +194,15 @@ public class ClassifyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
                 });
                 return myHolder;
 
-            case TYPE_OTHER_CHANNEL_HEADER:
+            case TYPE_OTHER_CHANNEL_HEADER://其他频道的头布局
                 view = mInflater.inflate(R.layout.item_other_channel_header, parent, false);
                 return new RecyclerView.ViewHolder(view) {
                 };
 
-            case TYPE_OTHER:
+            case TYPE_OTHER://其他频道的条目布局
                 view = mInflater.inflate(R.layout.item_other, parent, false);
                 final OtherViewHolder otherHolder = new OtherViewHolder(view);
+                //其他频道条目的点击事件
                 otherHolder.textView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -206,6 +217,7 @@ public class ClassifyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
                         // 如果targetView不在屏幕内,则为-1  此时不需要添加动画,因为此时notifyItemMoved自带一个向目标移动的动画
                         // 如果在屏幕内,则添加一个位移动画
                         if (recyclerView.indexOfChild(preTargetView) >= 0) {
+                            Logger.e("从其他频道到我的频道，用到了自定义动画");
                             int targetX = preTargetView.getLeft();
                             int targetY = preTargetView.getTop();
 
@@ -275,7 +287,7 @@ public class ClassifyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
 
             MyViewHolder myHolder = (MyViewHolder) holder;
             myHolder.textView.setText(mMyChannelItems.get(position - COUNT_PRE_MY_HEADER).getText());
-            if (selectedType ==-1&&position == 1){
+            if (selectedType == -1 && position == 1) {
                 myHolder.textView.setTextColor(Color.RED);
             }
             if (mMyChannelItems.get(position - COUNT_PRE_MY_HEADER).getType() == selectedType) {
@@ -309,9 +321,9 @@ public class ClassifyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
     @Override
     public int getItemCount() {
         // 我的频道  标题 + 我的频道.size + 其他频道 标题 + 其他频道.size
-        if (mMyChannelItems!=null&&mOtherChannelItems!=null){
+        if (mMyChannelItems != null && mOtherChannelItems != null) {
             return mMyChannelItems.size() + mOtherChannelItems.size() + COUNT_PRE_OTHER_HEADER;
-        }else {
+        } else {
             return COUNT_PRE_OTHER_HEADER;
         }
     }
@@ -575,16 +587,25 @@ public class ClassifyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
     }
 
 
+    /**
+     * 我的频道条目的点击事件
+     *
+     * @param myHolder
+     * @param parent
+     * @param v
+     */
     private void clickMyChannelItem(MyViewHolder myHolder, ViewGroup parent, View v) {
         int position = myHolder.getAdapterPosition();
         if (isEditMode) {
-            if (position!=1){
+            if (position != 1) {
                 RecyclerView recyclerView = ((RecyclerView) parent);
                 View targetView = recyclerView.getLayoutManager().findViewByPosition(mMyChannelItems.size() + COUNT_PRE_OTHER_HEADER);
                 View currentView = recyclerView.getLayoutManager().findViewByPosition(position);
-                // 如果targetView不在屏幕内,则indexOfChild为-1  此时不需要添加动画,因为此时notifyItemMoved自带一个向目标移动的动画
+                // 如果targetView不在屏幕内,则indexOfChild为-1
+                // 此时不需要添加动画,因为此时notifyItemMoved自带一个向目标移动的动画
                 // 如果在屏幕内,则添加一个位移动画
                 if (recyclerView.indexOfChild(targetView) >= 0) {
+                    Logger.e("从我的频道到其他频道，用到了自定义动画");
                     int targetX, targetY;
 
                     RecyclerView.LayoutManager manager = recyclerView.getLayoutManager();
@@ -609,7 +630,7 @@ public class ClassifyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
             }
 
         } else {
-            if (mChannelItemClickListener!=null){
+            if (mChannelItemClickListener != null) {
                 mChannelItemClickListener.onItemClick(v, position - COUNT_PRE_MY_HEADER);
             }
         }
