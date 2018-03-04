@@ -24,12 +24,12 @@ import java.util.ArrayList;
  */
 
 public class RefreshLoadMaoreRecyclerView extends RecyclerView {
-    private int lastItem;
-    private int totalCount;
+    private int lastItem;                   //当前可见条目的最后一个position位置
+    private int totalCount;                 //当前可见条目的第一个position位置
     private int firstVisible;
-    private boolean isLoad = false;
-    private boolean isTop = true;
-    private boolean isRefreshing = false;
+    private boolean isLoad = false;         //是否正在更多加载中
+    private boolean isTop = true;           //RecyclerView是否滚动到了顶部
+    private boolean isRefreshing = false;   //是否正在刷新中
     private int[] into;
     private int[] firstInto;
     private float startY = 0;
@@ -77,20 +77,24 @@ public class RefreshLoadMaoreRecyclerView extends RecyclerView {
 
     public void initListener() {
         text = (TextView) getHeaderView(0).findViewById(R.id.header_text);
+        //为RecyclerView设置了滚动监听
         this.addOnScrollListener(new OnScrollListener() {
             @Override
             public void onScrollStateChanged(RecyclerView recyclerView, int newState) {
                 super.onScrollStateChanged(recyclerView, newState);
+                //判断是否已经滑动到底部
                 if (lastItem == adapter.getItemCount() + 1 && newState == RecyclerView.SCROLL_STATE_IDLE && !isLoad) {
                     ViewGroup.LayoutParams params = getFooterView(0).getLayoutParams();
                     params.width = RecyclerView.LayoutParams.MATCH_PARENT;
                     params.height = RecyclerView.LayoutParams.WRAP_CONTENT;
                     getFooterView(0).setLayoutParams(params);
                     getFooterView(0).setVisibility(View.VISIBLE);
-                    smoothScrollToPosition(totalCount);
+                    smoothScrollToPosition(totalCount);//滑动到最后一个条目
                     isLoad = true;
+                    //加载更多
                     loadMoreListener.onLoadMore();
                 }
+                //判断是否滚动到顶部了
                 if (firstVisible == 0) {
                     isTop = true;
                 } else {
@@ -120,6 +124,7 @@ public class RefreshLoadMaoreRecyclerView extends RecyclerView {
             }
         });
 
+        //为RecyclerView设置了触摸事件的监听，为了实现下拉刷新布局的显示问题
         this.setOnTouchListener(new OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -246,6 +251,11 @@ public class RefreshLoadMaoreRecyclerView extends RecyclerView {
         return mFooterViewInfos.get(position).view;
     }
 
+    /**
+     * RecyclerView的adapter其实是WrapperRecyclerViewAdapter，
+     * 而传进来的参数adapter传到了WrapperRecyclerViewAdapter的构造其中
+     * @param adapter
+     */
     @Override
     public void setAdapter(Adapter adapter) {
         this.adapter = adapter;
@@ -266,7 +276,7 @@ public class RefreshLoadMaoreRecyclerView extends RecyclerView {
     @Override
     public void setLayoutManager(LayoutManager layout) {
         if (layout instanceof GridLayoutManager || layout instanceof StaggeredGridLayoutManager)
-            isShouldSpan = true;
+            isShouldSpan = true;//为了头布局和底布局占据一行的适配
         super.setLayoutManager(layout);
     }
 
@@ -274,6 +284,10 @@ public class RefreshLoadMaoreRecyclerView extends RecyclerView {
         void onRefreshing();
     }
 
+    /**
+     * 设置下拉刷新的监听
+     * @param pullToRefresh
+     */
     public void setPullToRefreshListener(PullToRefreshListener pullToRefresh) {
         if (loadMoreListener == null) {
             initListener();
@@ -285,6 +299,10 @@ public class RefreshLoadMaoreRecyclerView extends RecyclerView {
         void onLoadMore();
     }
 
+    /**
+     * 设置加载更多的监听
+     * @param loadMoreListener
+     */
     public void setLoadMoreListener(LoadMoreListener loadMoreListener) {
         if (pullToRefresh == null) {
             initListener();
@@ -292,6 +310,9 @@ public class RefreshLoadMaoreRecyclerView extends RecyclerView {
         this.loadMoreListener = loadMoreListener;
     }
 
+    /**
+     *加载完成时调用，隐藏底布局，刷新数据
+     */
     public void setLoadMoreComplete() {
         RecyclerView.LayoutParams params = (LayoutParams) getFooterView(0).getLayoutParams();
         params.width = 0;
@@ -302,6 +323,9 @@ public class RefreshLoadMaoreRecyclerView extends RecyclerView {
         isLoad = false;
     }
 
+    /**
+     * 刷新完成时调用，隐藏头布局，刷新数据
+     */
     public void setRefreshComplete() {
         RecyclerView.LayoutParams params1 = (RecyclerView.LayoutParams) getHeaderView(0).getLayoutParams();
         params1.width = RecyclerView.LayoutParams.MATCH_PARENT;

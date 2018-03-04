@@ -46,12 +46,14 @@ public class RefreshAndLoadMoreActivity extends AppCompatActivity {
         mRecyclerView.setAdapter(adapter);
         mRecyclerView.addItemDecoration(new MyItemDecoration(this,10));
 
+        //下拉刷新的监听
         mRecyclerView.setPullToRefreshListener(new RefreshLoadMaoreRecyclerView.PullToRefreshListener() {
             @Override
             public void onRefreshing() {
                 refreshData();
             }
         });
+        //上拉加载更多的监听
         mRecyclerView.setLoadMoreListener(new RefreshLoadMaoreRecyclerView.LoadMoreListener() {
             @Override
             public void onLoadMore() {
@@ -68,11 +70,13 @@ public class RefreshAndLoadMoreActivity extends AppCompatActivity {
             if (msg.what == 1){
                 for (int i = 0; i < 2; i++)
                     list.add(0, "http://img15.3lian.com/2015/a1/16/d/202.jpg");
+                //刷新完成
                 mRecyclerView.setRefreshComplete();
             }
             if (msg.what == 2){
                 for (int i = 0; i < 2; i++)
                     list.add("http://img15.3lian.com/2015/a1/16/d/202.jpg");
+                //加载更多完成
                 mRecyclerView.setLoadMoreComplete();
             }
         }
