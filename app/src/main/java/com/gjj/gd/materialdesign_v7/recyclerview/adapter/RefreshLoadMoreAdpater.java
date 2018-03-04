@@ -84,13 +84,6 @@ public class RefreshLoadMoreAdpater extends RecyclerView.Adapter<RefreshLoadMore
         ViewHolder(View view) {
             super(view);
             ButterKnife.bind(this, view);
-
-//            Point point = new Point();
-//            ((Activity) iv.getContext()).getWindowManager().getDefaultDisplay().getSize(point);
-//            int width = point.x;
-//            ViewGroup.LayoutParams params = iv.getLayoutParams();
-//            params.height = (int) (400 + Math.random() * 200);
-//            iv.setLayoutParams(params);
         }
 
     }

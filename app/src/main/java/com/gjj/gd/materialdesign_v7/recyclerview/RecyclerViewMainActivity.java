@@ -20,7 +20,7 @@ public class RecyclerViewMainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.rv_1, R.id.rv_2})
+    @OnClick({R.id.rv_1, R.id.rv_2,R.id.rv_3})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.rv_1:
@@ -28,6 +28,9 @@ public class RecyclerViewMainActivity extends AppCompatActivity {
                 break;
             case R.id.rv_2:
                 mIntent = new Intent(RecyclerViewMainActivity.this,RefreshAndLoadMoreActivity.class);
+                break;
+            case R.id.rv_3:
+                mIntent = new Intent(RecyclerViewMainActivity.this,HeaderAndFooterActivity.class);
                 break;
         }
 

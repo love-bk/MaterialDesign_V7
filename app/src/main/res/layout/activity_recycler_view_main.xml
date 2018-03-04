@@ -14,6 +14,11 @@
         style="@style/Button_style"
         android:text="RecyclerView的拖拽排序、点击删除"/>
     <Button
+        android:id="@+id/rv_3"
+        style="@style/Button_style"
+        android:text="RecyclerView添加Header和Footer"/>
+
+    <Button
         android:id="@+id/rv_2"
         style="@style/Button_style"
         android:text="RecyclerView的下拉刷新和上拉加载更多"/>
