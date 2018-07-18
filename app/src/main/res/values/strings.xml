@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Android高级UI</string>
+    <string name="app_name">UI练习</string>
     <string name="main_toolbar">toolbar 基本使用</string>
     <string name="custom">clock</string>
     <string name="menu_search">搜索</string>
@@ -43,6 +43,7 @@
     <string name="fab_study">FloatingActionButton的学习</string>
     <string name="appbar_study">AppBarLayout的学习</string>
     <string name="til_study">TextInputLayout的学习</string>
+    <string name="recycler_study">RecyclerView的学习</string>
     <string name="toolbar_study">ToolBar的学习</string>
     <string name="tablayout_study">TabLayout的学习</string>
     <string name="snackbar_study">SnackBar的学习</string>
@@ -74,4 +75,13 @@
     <string name="pull_to_refresh">下拉可以刷新</string>
     <string name="release_to_refresh">释放可以刷新数据</string>
     <string name="refreshing">正在刷新数据...</string>
+    <string name="recyclerview_click_delete">RecyclerView的拖拽排序、点击删除</string>
+    <string name="recyclerview_header_footer">RecyclerView添加Header和Footer</string>
+    <string name="recyclerview_refresh">RecyclerView的下拉刷新和上拉加载更多</string>
+    <string name="with_snackbar">结合Snackbar使用</string>
+    <string name="with_appbarlayout">结合AppBarLayout使用</string>
+    <string name="custom_behavior">自定义Behavior的最简单的例子</string>
+    <string name="snackbar_ordinary">普通的SnackBark</string>
+    <string name="snackbar_with_button">右侧带按钮的SnackBark</string>
+    <string name="snackbar_bg_color">自定义SnackBark的背景字体颜色</string>
 </resources>

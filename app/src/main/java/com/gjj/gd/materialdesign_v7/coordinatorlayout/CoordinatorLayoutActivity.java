@@ -3,16 +3,25 @@ package com.gjj.gd.materialdesign_v7.coordinatorlayout;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 
 import com.gjj.gd.materialdesign_v7.R;
+import com.gjj.gd.materialdesign_v7.adapter.ItemAdapter;
 
+import java.util.HashMap;
+
+import butterknife.BindView;
 import butterknife.ButterKnife;
-import butterknife.OnClick;
 
-public class CoordinatorLayoutActivity extends AppCompatActivity {
+public class CoordinatorLayoutActivity extends AppCompatActivity implements ItemAdapter.OnItemClickListener {
 
+    @BindView(R.id.recycler_view)
+    RecyclerView recyclerView;
     private Intent mIntent;
+    private String[] mItemTitles;
+    private HashMap<String, Class> itemMap;
+    private ItemAdapter mItemAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,24 +29,23 @@ public class CoordinatorLayoutActivity extends AppCompatActivity {
         setContentView(R.layout.activity_coordinator_layout);
         ButterKnife.bind(this);
         setTitle(R.string.coordinatorlayout_study);
+        initData();
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        mItemAdapter = new ItemAdapter(this, mItemTitles);
+        mItemAdapter.setListener(this);
+        recyclerView.setAdapter(mItemAdapter);
     }
 
-    @OnClick({R.id.tv_behavior1,R.id.tv_snackbar,R.id.tv_appbarlayout})
-    public void onViewClicked(View view) {
-        switch (view.getId()){
-            case R.id.tv_behavior1:
-                mIntent = new Intent(this,BehaviorInstance1Activity.class);
-                break;
-            case R.id.tv_snackbar:
-                mIntent = new Intent(this,CombineSnackbarActivity.class);
-                break;
-             case R.id.tv_appbarlayout:
-                mIntent = new Intent(this,TestActivity.class);
-                break;
+    private void initData() {
+        mItemTitles = getResources().getStringArray(R.array.coordinator_layout);
+        itemMap = new HashMap<>();
+        itemMap.put(getResources().getString(R.string.with_snackbar), CombineSnackbarActivity.class);
+        itemMap.put(getResources().getString(R.string.with_appbarlayout), TestActivity.class);
+        itemMap.put(getResources().getString(R.string.custom_behavior), BehaviorInstance1Activity.class);
+    }
 
-
-        }
-        if (mIntent != null)
-            startActivity(mIntent);
+    @Override
+    public void onItemClick(int position) {
+        startActivity(new Intent(this,itemMap.get(mItemTitles[position])));
     }
 }

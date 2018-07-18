@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="home_items">
+        <item>@string/recycler_study</item>
+        <item>@string/til_study</item>
+        <item>@string/appbar_study</item>
+        <item>@string/fab_study</item>
+        <item>@string/cardview_study</item>
+        <item>@string/coordinatorlayout_study</item>
+        <item>@string/toolbar_study</item>
+        <item>@string/snackbar_study</item>
+        <item>@string/tablayout_study</item>
+        <item>@string/constraintlayout_study</item>
+        <item>@string/colorpalette</item>
+    </string-array>
+    <string-array name="recycler_view">
+        <item>@string/recyclerview_click_delete</item>
+        <item>@string/recyclerview_header_footer</item>
+        <item>@string/recyclerview_refresh</item>
+    </string-array>
+    <string-array name="tablayout">
+        <item>@string/tablayout_base_user</item>
+        <item>@string/display_icon</item>
+        <item>@string/tablayout_custome_tab</item>
+    </string-array>
+
+    <string-array name="coordinator_layout">
+        <item>@string/with_snackbar</item>
+        <item>@string/with_appbarlayout</item>
+        <item>@string/custom_behavior</item>
+    </string-array>
+
+    <string-array name="toolbar">
+        <item>@string/main_toolbar</item>
+        <item>@string/zhihu_toolbar</item>
+        <item>@string/toolbar_1</item>
+        <item>@string/toolbar_2</item>
+        <item>@string/toolbar_3</item>
+    </string-array>
+    <string-array name="snackbar">
+        <item>@string/snackbar_ordinary</item>
+        <item>@string/snackbar_with_button</item>
+        <item>@string/snackbar_bg_color</item>
+    </string-array>
+
+
+</resources>
