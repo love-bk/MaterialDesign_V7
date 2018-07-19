@@ -5,9 +5,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.View;
 
-import com.gjj.gd.materialdesign_v7.activity.ZFBHomePagePullUpActivity;
+import com.gjj.gd.materialdesign_v7.activity.ComprehensiveExampleActivity;
 import com.gjj.gd.materialdesign_v7.adapter.ItemAdapter;
 import com.gjj.gd.materialdesign_v7.appbarlayout.AppbarLayoutActivity;
 import com.gjj.gd.materialdesign_v7.cardview.CardViewActivity;
@@ -25,7 +24,6 @@ import java.util.Map;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import butterknife.OnClick;
 
 public class MainActivity extends AppCompatActivity implements ItemAdapter.OnItemClickListener {
     @BindView(R.id.recycler_view)
@@ -62,7 +60,7 @@ public class MainActivity extends AppCompatActivity implements ItemAdapter.OnIte
         itemMap.put(getResources().getString(R.string.tablayout_study),AllTabLayoutActivity.class);
         itemMap.put(getResources().getString(R.string.constraintlayout_study),ConstraintlayoutActivity.class);
         itemMap.put(getResources().getString(R.string.colorpalette),ColorPaletteActivity.class);
-        itemMap.put(getResources().getString(R.string.comprehensive_example),ZFBHomePagePullUpActivity.class);
+        itemMap.put(getResources().getString(R.string.comprehensive_example),ComprehensiveExampleActivity.class);
     }
 
 

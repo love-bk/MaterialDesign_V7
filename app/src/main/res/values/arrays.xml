@@ -44,5 +44,10 @@
         <item>@string/snackbar_bg_color</item>
     </string-array>
 
+    <string-array name="comprehensive_example">
+        <item>@string/zhifubao_home_telescopic</item>
+    </string-array>
+
+
 
 </resources>

@@ -87,4 +87,5 @@
     <string name="snackbar_bg_color">自定义SnackBark的背景字体颜色</string>
     <string name="title_activity_zfbhome_page_pull_up">ZFBHomePagePullUpActivity</string>
     <string name="action_settings">Settings</string>
+    <string name="zhifubao_home_telescopic">仿支付宝首页头部伸缩效果</string>
 </resources>

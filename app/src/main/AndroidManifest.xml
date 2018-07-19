@@ -20,47 +20,48 @@
         <activity android:name=".toolbar.JichuActivity" />
         <activity
             android:name=".toolbar.ZhifuActivity"
-            android:theme="@style/Theme.Toolbar.ZhiHu"/>
+            android:theme="@style/Theme.Toolbar.ZhiHu" />
         <activity
             android:name=".ColorPaletteActivity"
-            android:theme="@style/AppTheme"/>
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".toolbar.ToolbarInstance1Activity"
-            android:theme="@style/Theme.Toolbar.ZhiHu"/>
+            android:theme="@style/Theme.Toolbar.ZhiHu" />
         <activity
             android:name=".toolbar.ToolbarInstance2Activity"
-            android:theme="@style/Theme.Toolbar.ZhiHu"/>
+            android:theme="@style/Theme.Toolbar.ZhiHu" />
         <activity
             android:name=".toolbar.ToolbarInstance3Activity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-        <activity android:name=".constraintlayout.ConstraintlayoutActivity"/>
-        <activity android:name=".tablayout.TabLayoutActivity"/>
-        <activity android:name=".tablayout.TbCustomeTabViewActivity"/>
-        <activity android:name=".toolbar.ToolBarActivity"/>
-        <activity android:name=".tablayout.AllTabLayoutActivity"/>
-        <activity android:name=".coordinatorlayout.CoordinatorLayoutActivity"/>
-        <activity android:name=".coordinatorlayout.BehaviorInstance1Activity"/>
-        <activity android:name=".coordinatorlayout.CombineSnackbarActivity"/>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".constraintlayout.ConstraintlayoutActivity" />
+        <activity android:name=".tablayout.TabLayoutActivity" />
+        <activity android:name=".tablayout.TbCustomeTabViewActivity" />
+        <activity android:name=".toolbar.ToolBarActivity" />
+        <activity android:name=".tablayout.AllTabLayoutActivity" />
+        <activity android:name=".coordinatorlayout.CoordinatorLayoutActivity" />
+        <activity android:name=".coordinatorlayout.BehaviorInstance1Activity" />
+        <activity android:name=".coordinatorlayout.CombineSnackbarActivity" />
         <activity
             android:name=".coordinatorlayout.TestActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-        <activity android:name=".snackbar.SnackBarActivity"/>
-        <activity android:name=".cardview.CardViewActivity"/>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".snackbar.SnackBarActivity" />
+        <activity android:name=".cardview.CardViewActivity" />
         <activity
             android:name=".fab.FabActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".appbarlayout.AppbarLayoutActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-        <activity android:name=".textinputlayout.TextInputLayoutActivity"/>
-        <activity android:name=".recyclerview.ClassifyActivity"/>
-        <activity android:name=".recyclerview.RecyclerViewMainActivity"/>
-        <activity android:name=".recyclerview.RefreshAndLoadMoreActivity"/>
-        <activity android:name=".recyclerview.HeaderAndFooterActivity"/>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".textinputlayout.TextInputLayoutActivity" />
+        <activity android:name=".recyclerview.ClassifyActivity" />
+        <activity android:name=".recyclerview.RecyclerViewMainActivity" />
+        <activity android:name=".recyclerview.RefreshAndLoadMoreActivity" />
+        <activity android:name=".recyclerview.HeaderAndFooterActivity" />
         <activity
-            android:name=".activity.ZFBHomePagePullUpActivity"
+            android:name=".activity.ZFBHomeTelescopicActivity"
             android:label="@string/title_activity_zfbhome_page_pull_up"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity.ComprehensiveExampleActivity"></activity>
     </application>
 
 </manifest>

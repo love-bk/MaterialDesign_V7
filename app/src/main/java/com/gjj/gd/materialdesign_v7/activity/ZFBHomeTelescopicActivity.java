@@ -2,11 +2,8 @@ package com.gjj.gd.materialdesign_v7.activity;
 
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.annotation.ColorRes;
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.CollapsingToolbarLayout;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -17,7 +14,7 @@ import com.gjj.gd.materialdesign_v7.R;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class ZFBHomePagePullUpActivity extends AppCompatActivity implements AppBarLayout.OnOffsetChangedListener {
+public class ZFBHomeTelescopicActivity extends AppCompatActivity implements AppBarLayout.OnOffsetChangedListener {
 
 
     @BindView(R.id.bg_content)
@@ -50,14 +47,12 @@ public class ZFBHomePagePullUpActivity extends AppCompatActivity implements AppB
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_zfbhome_page_pull_up);
+        setContentView(R.layout.activity_zfbhome_telescopic);
         ButterKnife.bind(this);
         toolbarOpen = findViewById(R.id.include_toolbar_open);
         toolbarClose = findViewById(R.id.include_toolbar_close);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-
         appBar.addOnOffsetChangedListener(this);
     }
 
