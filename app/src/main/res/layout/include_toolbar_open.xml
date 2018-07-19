@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/colorPrimary"
+    >
+
+    <RelativeLayout
+        android:layout_margin="@dimen/dimen_10dp"
+        android:layout_toLeftOf="@+id/iv_contact"
+        android:background="@drawable/shape_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/dimen_10dp"
+        android:paddingRight="@dimen/dimen_10dp">
+
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_search"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_search"
+            android:hint="搜索商品"
+            android:background="@null"
+            android:paddingLeft="@dimen/dimen_10dp"
+            android:textColorHint="@android:color/white"
+            android:textSize="14sp"/>
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/iv_plus"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dimen_10dp"
+        android:src="@mipmap/ic_add"/>
+    <ImageView
+        android:id="@+id/iv_contact"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dimen_10dp"
+        android:layout_toLeftOf="@id/iv_plus"
+        android:src="@mipmap/ic_contact"/>
+    <View
+        android:id="@+id/bg_toolbar_open"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

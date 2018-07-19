@@ -44,6 +44,7 @@
     <string name="appbar_study">AppBarLayout的学习</string>
     <string name="til_study">TextInputLayout的学习</string>
     <string name="recycler_study">RecyclerView的学习</string>
+    <string name="comprehensive_example">综合实例</string>
     <string name="toolbar_study">ToolBar的学习</string>
     <string name="tablayout_study">TabLayout的学习</string>
     <string name="snackbar_study">SnackBar的学习</string>
@@ -84,4 +85,6 @@
     <string name="snackbar_ordinary">普通的SnackBark</string>
     <string name="snackbar_with_button">右侧带按钮的SnackBark</string>
     <string name="snackbar_bg_color">自定义SnackBark的背景字体颜色</string>
+    <string name="title_activity_zfbhome_page_pull_up">ZFBHomePagePullUpActivity</string>
+    <string name="action_settings">Settings</string>
 </resources>

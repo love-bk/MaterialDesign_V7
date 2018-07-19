@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="home_items">
+        <item>@string/comprehensive_example</item>
         <item>@string/recycler_study</item>
         <item>@string/til_study</item>
         <item>@string/appbar_study</item>

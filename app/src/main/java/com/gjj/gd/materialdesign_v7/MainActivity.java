@@ -7,6 +7,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
+import com.gjj.gd.materialdesign_v7.activity.ZFBHomePagePullUpActivity;
 import com.gjj.gd.materialdesign_v7.adapter.ItemAdapter;
 import com.gjj.gd.materialdesign_v7.appbarlayout.AppbarLayoutActivity;
 import com.gjj.gd.materialdesign_v7.cardview.CardViewActivity;
@@ -61,6 +62,7 @@ public class MainActivity extends AppCompatActivity implements ItemAdapter.OnIte
         itemMap.put(getResources().getString(R.string.tablayout_study),AllTabLayoutActivity.class);
         itemMap.put(getResources().getString(R.string.constraintlayout_study),ConstraintlayoutActivity.class);
         itemMap.put(getResources().getString(R.string.colorpalette),ColorPaletteActivity.class);
+        itemMap.put(getResources().getString(R.string.comprehensive_example),ZFBHomePagePullUpActivity.class);
     }
 
 
