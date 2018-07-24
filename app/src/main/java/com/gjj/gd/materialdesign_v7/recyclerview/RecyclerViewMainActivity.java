@@ -27,7 +27,7 @@ public class RecyclerViewMainActivity extends AppCompatActivity implements ItemA
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recycler_view_main);
         ButterKnife.bind(this);
-
+        setTitle("RecyclerView的学习");
         initData();
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -42,6 +42,7 @@ public class RecyclerViewMainActivity extends AppCompatActivity implements ItemA
         itemMap.put(getResources().getString(R.string.recyclerview_click_delete), ClassifyActivity.class);
         itemMap.put(getResources().getString(R.string.recyclerview_refresh), RefreshAndLoadMoreActivity.class);
         itemMap.put(getResources().getString(R.string.recyclerview_header_footer), HeaderAndFooterActivity.class);
+        itemMap.put(getResources().getString(R.string.rv_add_remove_item), AddRemoveItemActivity.class);
     }
 
     @Override

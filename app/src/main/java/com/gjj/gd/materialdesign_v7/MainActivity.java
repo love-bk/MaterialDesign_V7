@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.MotionEvent;
 
 import com.gjj.gd.materialdesign_v7.activity.ComprehensiveExampleActivity;
 import com.gjj.gd.materialdesign_v7.adapter.ItemAdapter;
@@ -67,5 +68,15 @@ public class MainActivity extends AppCompatActivity implements ItemAdapter.OnIte
     @Override
     public void onItemClick(int position) {
         startActivity(new Intent(this,itemMap.get(itemDatas[position])));
+    }
+
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        return super.onTouchEvent(event);
+    }
+
+    @Override
+    public boolean dispatchTouchEvent(MotionEvent ev) {
+        return super.dispatchTouchEvent(ev);
     }
 }

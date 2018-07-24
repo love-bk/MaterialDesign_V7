@@ -18,6 +18,7 @@
         <item>@string/recyclerview_click_delete</item>
         <item>@string/recyclerview_header_footer</item>
         <item>@string/recyclerview_refresh</item>
+        <item>@string/rv_add_remove_item</item>
     </string-array>
     <string-array name="tablayout">
         <item>@string/tablayout_base_user</item>

@@ -79,6 +79,7 @@
     <string name="recyclerview_click_delete">RecyclerView的拖拽排序、点击删除</string>
     <string name="recyclerview_header_footer">RecyclerView添加Header和Footer</string>
     <string name="recyclerview_refresh">RecyclerView的下拉刷新和上拉加载更多</string>
+    <string name="rv_add_remove_item">RecyclerView实现item的添加和删除</string>
     <string name="with_snackbar">结合Snackbar使用</string>
     <string name="with_appbarlayout">结合AppBarLayout使用</string>
     <string name="custom_behavior">自定义Behavior的最简单的例子</string>
@@ -88,4 +89,5 @@
     <string name="title_activity_zfbhome_page_pull_up">ZFBHomePagePullUpActivity</string>
     <string name="action_settings">Settings</string>
     <string name="zhifubao_home_telescopic">仿支付宝首页头部伸缩效果</string>
+    <string name="delete">删除</string>
 </resources>

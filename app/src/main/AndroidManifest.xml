@@ -61,7 +61,8 @@
             android:name=".activity.ZFBHomeTelescopicActivity"
             android:label="@string/title_activity_zfbhome_page_pull_up"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".activity.ComprehensiveExampleActivity"></activity>
+        <activity android:name=".activity.ComprehensiveExampleActivity" />
+        <activity android:name=".recyclerview.AddRemoveItemActivity"></activity>
     </application>
 
 </manifest>
