@@ -47,6 +47,7 @@
 
     <string-array name="comprehensive_example">
         <item>@string/zhifubao_home_telescopic</item>
+        <item>@string/copy_airbnb_app_home_navigation</item>
     </string-array>
 
 

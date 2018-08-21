@@ -89,5 +89,7 @@
     <string name="title_activity_zfbhome_page_pull_up">ZFBHomePagePullUpActivity</string>
     <string name="action_settings">Settings</string>
     <string name="zhifubao_home_telescopic">仿支付宝首页头部伸缩效果</string>
+    <string name="copy_airbnb_app_home_navigation">模仿Airbnb App的首页导航</string>
     <string name="delete">删除</string>
+
 </resources>

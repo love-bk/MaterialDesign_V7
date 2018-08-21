@@ -62,7 +62,9 @@
             android:label="@string/title_activity_zfbhome_page_pull_up"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".activity.ComprehensiveExampleActivity" />
-        <activity android:name=".recyclerview.AddRemoveItemActivity"></activity>
+        <activity android:name=".recyclerview.AddRemoveItemActivity" />
+        <activity android:name=".activity.CopyAirbnbAppHomeNavActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>

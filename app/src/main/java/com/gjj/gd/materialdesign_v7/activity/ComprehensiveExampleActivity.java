@@ -27,6 +27,7 @@ public class ComprehensiveExampleActivity extends AppCompatActivity implements I
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_comprehensive_example);
         ButterKnife.bind(this);
+        setTitle(getString(R.string.comprehensive_example));
         initData();
         mAdapter = new ItemAdapter(this, itemDatas);
         mAdapter.setListener(this);
@@ -35,9 +36,11 @@ public class ComprehensiveExampleActivity extends AppCompatActivity implements I
     }
 
     private void initData() {
+        //https://github.com/MaterialDesignGjj/CoordinatortablayoutDemo
         itemDatas = getResources().getStringArray(R.array.comprehensive_example);
         itemMap = new HashMap<>();
         itemMap.put(getResources().getString(R.string.zhifubao_home_telescopic), ZFBHomeTelescopicActivity.class);
+        itemMap.put(getResources().getString(R.string.copy_airbnb_app_home_navigation), CopyAirbnbAppHomeNavActivity.class);
     }
 
     @Override
