@@ -9,7 +9,7 @@
     android:paddingTop="15dp"
     android:paddingRight="15dp"
     android:id="@+id/recycler_view"
-    tools:context="com.gjj.gd.materialdesign_v7.toolbar.ToolBarActivity">
+    tools:context=".widget_study.toolbar.ToolBarActivity">
 
 
 

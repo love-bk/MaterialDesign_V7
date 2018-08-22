@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.gjj.gd.materialdesign_v7.toolbar.JichuActivity">
+    tools:context=".widget_study.toolbar.JichuActivity">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"

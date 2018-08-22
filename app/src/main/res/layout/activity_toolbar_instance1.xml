@@ -8,7 +8,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#ffffffff"
-    tools:context="com.gjj.gd.materialdesign_v7.toolbar.ToolbarInstance1Activity">
+    tools:context=".widget_study.toolbar.ToolbarInstance1Activity">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
