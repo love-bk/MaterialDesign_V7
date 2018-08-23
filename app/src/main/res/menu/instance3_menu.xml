@@ -2,7 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
       xmlns:app="http://schemas.android.com/apk/res-auto"
       xmlns:tools="http://schemas.android.com/tools"
-      tools:context=".toolbar.ToolbarInstance3Activity">
+      tools:context=".widget_study.toolbar.ToolbarInstance3Activity">
 
     <item
         android:id="@+id/ab_search"

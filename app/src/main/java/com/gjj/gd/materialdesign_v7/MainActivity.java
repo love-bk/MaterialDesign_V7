@@ -9,16 +9,16 @@ import android.view.MotionEvent;
 
 import com.gjj.gd.materialdesign_v7.activity.ComprehensiveExampleActivity;
 import com.gjj.gd.materialdesign_v7.adapter.ItemAdapter;
-import com.gjj.gd.materialdesign_v7.appbarlayout.AppbarLayoutActivity;
-import com.gjj.gd.materialdesign_v7.cardview.CardViewActivity;
-import com.gjj.gd.materialdesign_v7.constraintlayout.ConstraintlayoutActivity;
-import com.gjj.gd.materialdesign_v7.coordinatorlayout.CoordinatorLayoutActivity;
-import com.gjj.gd.materialdesign_v7.fab.FabActivity;
+import com.gjj.gd.materialdesign_v7.widget_study.appbarlayout.AppbarLayoutActivity;
+import com.gjj.gd.materialdesign_v7.widget_study.cardview.CardViewActivity;
+import com.gjj.gd.materialdesign_v7.widget_study.constraintlayout.ConstraintlayoutActivity;
+import com.gjj.gd.materialdesign_v7.widget_study.coordinatorlayout.CoordinatorLayoutActivity;
+import com.gjj.gd.materialdesign_v7.widget_study.fab.FabActivity;
 import com.gjj.gd.materialdesign_v7.recyclerview.RecyclerViewMainActivity;
-import com.gjj.gd.materialdesign_v7.snackbar.SnackBarActivity;
-import com.gjj.gd.materialdesign_v7.tablayout.AllTabLayoutActivity;
-import com.gjj.gd.materialdesign_v7.textinputlayout.TextInputLayoutActivity;
-import com.gjj.gd.materialdesign_v7.toolbar.ToolBarActivity;
+import com.gjj.gd.materialdesign_v7.widget_study.snackbar.SnackBarActivity;
+import com.gjj.gd.materialdesign_v7.widget_study.tablayout.AllTabLayoutActivity;
+import com.gjj.gd.materialdesign_v7.widget_study.textinputlayout.TextInputLayoutActivity;
+import com.gjj.gd.materialdesign_v7.widget_study.toolbar.ToolBarActivity;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -17,42 +17,42 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".toolbar.JichuActivity" />
+        <activity android:name=".widget_study.toolbar.JichuActivity" />
         <activity
-            android:name=".toolbar.ZhifuActivity"
+            android:name=".widget_study.toolbar.ZhifuActivity"
             android:theme="@style/Theme.Toolbar.ZhiHu" />
         <activity
             android:name=".ColorPaletteActivity"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".toolbar.ToolbarInstance1Activity"
+            android:name=".widget_study.toolbar.ToolbarInstance1Activity"
             android:theme="@style/Theme.Toolbar.ZhiHu" />
         <activity
-            android:name=".toolbar.ToolbarInstance2Activity"
+            android:name=".widget_study.toolbar.ToolbarInstance2Activity"
             android:theme="@style/Theme.Toolbar.ZhiHu" />
         <activity
-            android:name=".toolbar.ToolbarInstance3Activity"
+            android:name=".widget_study.toolbar.ToolbarInstance3Activity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name=".constraintlayout.ConstraintlayoutActivity" />
-        <activity android:name=".tablayout.TabLayoutActivity" />
-        <activity android:name=".tablayout.TbCustomeTabViewActivity" />
-        <activity android:name=".toolbar.ToolBarActivity" />
-        <activity android:name=".tablayout.AllTabLayoutActivity" />
-        <activity android:name=".coordinatorlayout.CoordinatorLayoutActivity" />
-        <activity android:name=".coordinatorlayout.BehaviorInstance1Activity" />
-        <activity android:name=".coordinatorlayout.CombineSnackbarActivity" />
+        <activity android:name=".widget_study.constraintlayout.ConstraintlayoutActivity" />
+        <activity android:name=".widget_study.tablayout.TabLayoutActivity" />
+        <activity android:name=".widget_study.tablayout.TbCustomeTabViewActivity" />
+        <activity android:name=".widget_study.toolbar.ToolBarActivity" />
+        <activity android:name=".widget_study.tablayout.AllTabLayoutActivity" />
+        <activity android:name=".widget_study.coordinatorlayout.CoordinatorLayoutActivity" />
+        <activity android:name=".widget_study.coordinatorlayout.BehaviorInstance1Activity" />
+        <activity android:name=".widget_study.coordinatorlayout.CombineSnackbarActivity" />
         <activity
-            android:name=".coordinatorlayout.TestActivity"
+            android:name=".widget_study.coordinatorlayout.TestActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name=".snackbar.SnackBarActivity" />
-        <activity android:name=".cardview.CardViewActivity" />
+        <activity android:name=".widget_study.snackbar.SnackBarActivity" />
+        <activity android:name=".widget_study.cardview.CardViewActivity" />
         <activity
-            android:name=".fab.FabActivity"
+            android:name=".widget_study.fab.FabActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
-            android:name=".appbarlayout.AppbarLayoutActivity"
+            android:name=".widget_study.appbarlayout.AppbarLayoutActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name=".textinputlayout.TextInputLayoutActivity" />
+        <activity android:name=".widget_study.textinputlayout.TextInputLayoutActivity" />
         <activity android:name=".recyclerview.ClassifyActivity" />
         <activity android:name=".recyclerview.RecyclerViewMainActivity" />
         <activity android:name=".recyclerview.RefreshAndLoadMoreActivity" />
@@ -63,8 +63,12 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".activity.ComprehensiveExampleActivity" />
         <activity android:name=".recyclerview.AddRemoveItemActivity" />
-        <activity android:name=".activity.CopyAirbnbAppHomeNavActivity"
-            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".activity.CopyAirbnbAppHomeNavActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity.Instance3Activity"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
     </application>
 
 </manifest>

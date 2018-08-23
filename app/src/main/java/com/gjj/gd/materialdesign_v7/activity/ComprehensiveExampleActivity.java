@@ -41,6 +41,7 @@ public class ComprehensiveExampleActivity extends AppCompatActivity implements I
         itemMap = new HashMap<>();
         itemMap.put(getResources().getString(R.string.zhifubao_home_telescopic), ZFBHomeTelescopicActivity.class);
         itemMap.put(getResources().getString(R.string.copy_airbnb_app_home_navigation), CopyAirbnbAppHomeNavActivity.class);
+        itemMap.put(getResources().getString(R.string.instance3), Instance3Activity.class);
     }
 
     @Override
