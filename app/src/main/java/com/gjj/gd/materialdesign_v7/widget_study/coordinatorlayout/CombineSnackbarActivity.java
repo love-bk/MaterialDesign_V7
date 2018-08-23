@@ -6,12 +6,13 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.gjj.gd.materialdesign_v7.BaseActivity;
 import com.gjj.gd.materialdesign_v7.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class CombineSnackbarActivity extends AppCompatActivity {
+public class CombineSnackbarActivity extends BaseActivity {
 
     @BindView(R.id.fab)
     FloatingActionButton mFab;

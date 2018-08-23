@@ -1,4 +1,4 @@
-package com.gjj.gd.materialdesign_v7.recyclerview.adapter;
+package com.gjj.gd.materialdesign_v7.widget_study.recyclerview.adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;

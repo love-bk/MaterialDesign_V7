@@ -5,6 +5,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.gjj.gd.materialdesign_v7.BaseActivity;
 import com.gjj.gd.materialdesign_v7.Constant;
 import com.gjj.gd.materialdesign_v7.R;
 import com.gjj.gd.materialdesign_v7.widget_study.tablayout.adapter.MyFragmentPagerAdapter;
@@ -12,7 +13,7 @@ import com.gjj.gd.materialdesign_v7.widget_study.tablayout.adapter.MyFragmentPag
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class TbCustomeTabViewActivity extends AppCompatActivity {
+public class TbCustomeTabViewActivity extends BaseActivity {
 
     @BindView(R.id.tablayout)
     TabLayout mTabLayout;

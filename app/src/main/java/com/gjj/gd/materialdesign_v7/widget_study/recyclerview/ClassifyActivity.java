@@ -1,4 +1,4 @@
-package com.gjj.gd.materialdesign_v7.recyclerview;
+package com.gjj.gd.materialdesign_v7.widget_study.recyclerview;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -9,10 +9,11 @@ import android.support.v7.widget.helper.ItemTouchHelper;
 import android.view.View;
 import android.widget.Toast;
 
+import com.gjj.gd.materialdesign_v7.BaseActivity;
 import com.gjj.gd.materialdesign_v7.R;
 import com.gjj.gd.materialdesign_v7.bean.TagBean;
-import com.gjj.gd.materialdesign_v7.recyclerview.adapter.ClassifyAdapter;
-import com.gjj.gd.materialdesign_v7.recyclerview.listener.ItemDragHelperCallback;
+import com.gjj.gd.materialdesign_v7.widget_study.recyclerview.adapter.ClassifyAdapter;
+import com.gjj.gd.materialdesign_v7.widget_study.recyclerview.listener.ItemDragHelperCallback;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,7 +21,7 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class ClassifyActivity extends AppCompatActivity {
+public class ClassifyActivity extends BaseActivity {
 
 
     @BindView(R.id.recy)

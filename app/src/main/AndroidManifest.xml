@@ -53,16 +53,16 @@
             android:name=".widget_study.appbarlayout.AppbarLayoutActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".widget_study.textinputlayout.TextInputLayoutActivity" />
-        <activity android:name=".recyclerview.ClassifyActivity" />
-        <activity android:name=".recyclerview.RecyclerViewMainActivity" />
-        <activity android:name=".recyclerview.RefreshAndLoadMoreActivity" />
-        <activity android:name=".recyclerview.HeaderAndFooterActivity" />
+        <activity android:name=".widget_study.recyclerview.ClassifyActivity" />
+        <activity android:name=".widget_study.recyclerview.RecyclerViewMainActivity" />
+        <activity android:name=".widget_study.recyclerview.RefreshAndLoadMoreActivity" />
+        <activity android:name=".widget_study.recyclerview.HeaderAndFooterActivity" />
         <activity
             android:name=".activity.ZFBHomeTelescopicActivity"
             android:label="@string/title_activity_zfbhome_page_pull_up"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".activity.ComprehensiveExampleActivity" />
-        <activity android:name=".recyclerview.AddRemoveItemActivity" />
+        <activity android:name=".widget_study.recyclerview.AddRemoveItemActivity" />
         <activity
             android:name=".activity.CopyAirbnbAppHomeNavActivity"
             android:theme="@style/AppTheme.NoActionBar" />

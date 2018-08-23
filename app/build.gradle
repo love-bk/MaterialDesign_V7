@@ -4,7 +4,7 @@ android {
     buildToolsVersion "26.0.2"
     defaultConfig {
         applicationId "com.gjj.gd.materialdesign_v7"
-        minSdkVersion 15
+        minSdkVersion 21
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"

@@ -1,4 +1,4 @@
-package com.gjj.gd.materialdesign_v7.recyclerview.view;
+package com.gjj.gd.materialdesign_v7.widget_study.recyclerview.view;
 
 import android.content.Context;
 import android.support.annotation.Nullable;
@@ -15,7 +15,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.gjj.gd.materialdesign_v7.R;
-import com.gjj.gd.materialdesign_v7.recyclerview.adapter.WrapperRecyclerViewAdapter;
+import com.gjj.gd.materialdesign_v7.widget_study.recyclerview.adapter.WrapperRecyclerViewAdapter;
 
 import java.util.ArrayList;
 

@@ -12,11 +12,12 @@ import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
 import android.view.Gravity;
 
+import com.gjj.gd.materialdesign_v7.BaseActivity;
 import com.gjj.gd.materialdesign_v7.R;
 
 import java.util.List;
 
-public class ToolbarInstance1Activity extends AppCompatActivity {
+public class ToolbarInstance1Activity extends BaseActivity {
 
     private static final java.lang.String KEY_TITLE = "key_title";
     private String mTitle;

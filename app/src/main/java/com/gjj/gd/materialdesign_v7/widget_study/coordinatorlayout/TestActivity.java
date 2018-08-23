@@ -8,13 +8,14 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 
+import com.gjj.gd.materialdesign_v7.BaseActivity;
 import com.gjj.gd.materialdesign_v7.R;
 import com.gjj.gd.materialdesign_v7.widget_study.coordinatorlayout.adapter.TestRecyclerViewAdapter;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class TestActivity extends AppCompatActivity {
+public class TestActivity extends BaseActivity {
 
     @BindView(R.id.recycler)
     RecyclerView mRecycler;

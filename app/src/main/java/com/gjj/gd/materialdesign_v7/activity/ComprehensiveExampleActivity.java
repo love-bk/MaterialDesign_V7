@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
+import com.gjj.gd.materialdesign_v7.BaseActivity;
 import com.gjj.gd.materialdesign_v7.R;
 import com.gjj.gd.materialdesign_v7.adapter.ItemAdapter;
 
@@ -14,7 +15,7 @@ import java.util.HashMap;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class ComprehensiveExampleActivity extends AppCompatActivity implements ItemAdapter.OnItemClickListener {
+public class ComprehensiveExampleActivity extends BaseActivity implements ItemAdapter.OnItemClickListener {
 
     @BindView(R.id.recycler_view)
     RecyclerView recyclerView;

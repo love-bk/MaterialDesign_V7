@@ -9,12 +9,13 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.gjj.gd.materialdesign_v7.BaseActivity;
 import com.gjj.gd.materialdesign_v7.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class ZFBHomeTelescopicActivity extends AppCompatActivity implements AppBarLayout.OnOffsetChangedListener {
+public class ZFBHomeTelescopicActivity extends BaseActivity implements AppBarLayout.OnOffsetChangedListener {
 
 
     @BindView(R.id.bg_content)

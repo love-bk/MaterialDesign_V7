@@ -9,12 +9,13 @@ import android.view.*;
 import android.widget.PopupWindow;
 import android.widget.Toast;
 
+import com.gjj.gd.materialdesign_v7.BaseActivity;
 import com.gjj.gd.materialdesign_v7.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class ToolbarInstance2Activity extends AppCompatActivity implements View.OnClickListener {
+public class ToolbarInstance2Activity extends BaseActivity implements View.OnClickListener {
 
     @BindView(R.id.toolbar)
     Toolbar mToolbar;

@@ -3,7 +3,7 @@ package com.gjj.gd.materialdesign_v7;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class ColorPaletteActivity extends AppCompatActivity {
+public class ColorPaletteActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

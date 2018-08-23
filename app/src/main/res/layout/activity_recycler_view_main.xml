@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:padding="15dp"
     android:orientation="vertical"
-    tools:context="com.gjj.gd.materialdesign_v7.recyclerview.RecyclerViewMainActivity">
+    tools:context="com.gjj.gd.materialdesign_v7.widget_study.recyclerview.RecyclerViewMainActivity">
 
 
     <android.support.v7.widget.RecyclerView

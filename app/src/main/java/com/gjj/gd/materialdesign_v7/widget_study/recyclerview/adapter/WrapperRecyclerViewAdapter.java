@@ -1,4 +1,4 @@
-package com.gjj.gd.materialdesign_v7.recyclerview.adapter;
+package com.gjj.gd.materialdesign_v7.widget_study.recyclerview.adapter;
 
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -7,7 +7,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
-import com.gjj.gd.materialdesign_v7.recyclerview.view.RefreshLoadMaoreRecyclerView;
+
+import com.gjj.gd.materialdesign_v7.widget_study.recyclerview.view.RefreshLoadMaoreRecyclerView;
 
 import java.util.ArrayList;
 

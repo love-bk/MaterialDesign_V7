@@ -8,12 +8,13 @@ import android.view.MenuItem;
 import android.view.Window;
 import android.widget.Toast;
 
+import com.gjj.gd.materialdesign_v7.BaseActivity;
 import com.gjj.gd.materialdesign_v7.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class JichuActivity extends AppCompatActivity {
+public class JichuActivity extends BaseActivity {
 
     @BindView(R.id.toolbar)
     Toolbar mToolbar;

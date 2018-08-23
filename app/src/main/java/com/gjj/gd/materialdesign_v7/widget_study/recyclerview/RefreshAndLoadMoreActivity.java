@@ -1,4 +1,4 @@
-package com.gjj.gd.materialdesign_v7.recyclerview;
+package com.gjj.gd.materialdesign_v7.widget_study.recyclerview;
 
 import android.os.Bundle;
 import android.os.Handler;
@@ -10,17 +10,18 @@ import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.gjj.gd.materialdesign_v7.BaseActivity;
 import com.gjj.gd.materialdesign_v7.R;
-import com.gjj.gd.materialdesign_v7.recyclerview.adapter.RefreshLoadMoreAdpater;
-import com.gjj.gd.materialdesign_v7.recyclerview.other.MyItemDecoration;
-import com.gjj.gd.materialdesign_v7.recyclerview.view.RefreshLoadMaoreRecyclerView;
+import com.gjj.gd.materialdesign_v7.widget_study.recyclerview.adapter.RefreshLoadMoreAdpater;
+import com.gjj.gd.materialdesign_v7.widget_study.recyclerview.other.MyItemDecoration;
+import com.gjj.gd.materialdesign_v7.widget_study.recyclerview.view.RefreshLoadMaoreRecyclerView;
 
 import java.util.ArrayList;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class RefreshAndLoadMoreActivity extends AppCompatActivity {
+public class RefreshAndLoadMoreActivity extends BaseActivity {
 
     @BindView(R.id.custom_rv)
     RefreshLoadMaoreRecyclerView mRecyclerView;

@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.gjj.gd.materialdesign_v7.BaseActivity;
 import com.gjj.gd.materialdesign_v7.R;
 import com.gjj.gd.materialdesign_v7.adapter.ItemAdapter;
 import com.gjj.gd.materialdesign_v7.widget_study.toolbar.JichuActivity;
@@ -23,7 +24,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class SnackBarActivity extends AppCompatActivity implements ItemAdapter.OnItemClickListener {
+public class SnackBarActivity extends BaseActivity implements ItemAdapter.OnItemClickListener {
     @BindView(R.id.recycler_view)
     RecyclerView recyclerView;
     private Snackbar snackbar3;

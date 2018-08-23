@@ -5,9 +5,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.gjj.gd.materialdesign_v7.recyclerview.RefreshAndLoadMoreActivity">
+    tools:context="com.gjj.gd.materialdesign_v7.widget_study.recyclerview.RefreshAndLoadMoreActivity">
 
-    <com.gjj.gd.materialdesign_v7.recyclerview.view.RefreshLoadMaoreRecyclerView
+    <com.gjj.gd.materialdesign_v7.widget_study.recyclerview.view.RefreshLoadMaoreRecyclerView
         android:id="@+id/custom_rv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>

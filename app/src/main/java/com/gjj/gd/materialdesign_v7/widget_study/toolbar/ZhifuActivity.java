@@ -4,9 +4,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 
+import com.gjj.gd.materialdesign_v7.BaseActivity;
 import com.gjj.gd.materialdesign_v7.R;
 
-public class ZhifuActivity extends AppCompatActivity {
+public class ZhifuActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

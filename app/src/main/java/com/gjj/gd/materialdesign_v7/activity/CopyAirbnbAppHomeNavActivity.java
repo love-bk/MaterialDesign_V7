@@ -16,6 +16,7 @@ import android.view.animation.TranslateAnimation;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
+import com.gjj.gd.materialdesign_v7.BaseActivity;
 import com.gjj.gd.materialdesign_v7.R;
 
 import java.util.IllegalFormatCodePointException;
@@ -23,7 +24,7 @@ import java.util.IllegalFormatCodePointException;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class CopyAirbnbAppHomeNavActivity extends AppCompatActivity {
+public class CopyAirbnbAppHomeNavActivity extends BaseActivity {
 
     @BindView(R.id.imageview)
     ImageView imageview;

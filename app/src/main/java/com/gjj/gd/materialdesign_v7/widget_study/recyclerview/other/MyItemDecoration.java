@@ -1,4 +1,4 @@
-package com.gjj.gd.materialdesign_v7.recyclerview.other;
+package com.gjj.gd.materialdesign_v7.widget_study.recyclerview.other;
 
 import android.content.Context;
 import android.graphics.Rect;

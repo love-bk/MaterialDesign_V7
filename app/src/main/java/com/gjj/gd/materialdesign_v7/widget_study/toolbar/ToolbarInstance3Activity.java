@@ -9,12 +9,13 @@ import android.view.*;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.gjj.gd.materialdesign_v7.BaseActivity;
 import com.gjj.gd.materialdesign_v7.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class ToolbarInstance3Activity extends AppCompatActivity {
+public class ToolbarInstance3Activity extends BaseActivity {
 
     @BindView(R.id.toolbar)
     Toolbar mToolbar;

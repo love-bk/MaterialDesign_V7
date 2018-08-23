@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.MotionEvent;
+import android.view.WindowManager;
 
 import com.gjj.gd.materialdesign_v7.activity.ComprehensiveExampleActivity;
 import com.gjj.gd.materialdesign_v7.adapter.ItemAdapter;
@@ -14,7 +15,7 @@ import com.gjj.gd.materialdesign_v7.widget_study.cardview.CardViewActivity;
 import com.gjj.gd.materialdesign_v7.widget_study.constraintlayout.ConstraintlayoutActivity;
 import com.gjj.gd.materialdesign_v7.widget_study.coordinatorlayout.CoordinatorLayoutActivity;
 import com.gjj.gd.materialdesign_v7.widget_study.fab.FabActivity;
-import com.gjj.gd.materialdesign_v7.recyclerview.RecyclerViewMainActivity;
+import com.gjj.gd.materialdesign_v7.widget_study.recyclerview.RecyclerViewMainActivity;
 import com.gjj.gd.materialdesign_v7.widget_study.snackbar.SnackBarActivity;
 import com.gjj.gd.materialdesign_v7.widget_study.tablayout.AllTabLayoutActivity;
 import com.gjj.gd.materialdesign_v7.widget_study.textinputlayout.TextInputLayoutActivity;
@@ -26,7 +27,7 @@ import java.util.Map;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class MainActivity extends AppCompatActivity implements ItemAdapter.OnItemClickListener {
+public class MainActivity extends BaseActivity implements ItemAdapter.OnItemClickListener {
     @BindView(R.id.recycler_view)
     RecyclerView recyclerView;
     private Intent intent = null;
@@ -38,6 +39,7 @@ public class MainActivity extends AppCompatActivity implements ItemAdapter.OnIte
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         ButterKnife.bind(this);
         initData();

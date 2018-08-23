@@ -1,4 +1,4 @@
-package com.gjj.gd.materialdesign_v7.recyclerview;
+package com.gjj.gd.materialdesign_v7.widget_study.recyclerview;
 
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
@@ -10,15 +10,15 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.widget.TextView;
 
+import com.gjj.gd.materialdesign_v7.BaseActivity;
 import com.gjj.gd.materialdesign_v7.R;
-import com.gjj.gd.materialdesign_v7.recyclerview.adapter.HeaderAndFooterWrapper;
-import com.gjj.gd.materialdesign_v7.recyclerview.adapter.HeaderAndFotterAdapter;
-import com.gjj.gd.materialdesign_v7.recyclerview.other.MyItemDecoration;
+import com.gjj.gd.materialdesign_v7.widget_study.recyclerview.adapter.HeaderAndFooterWrapper;
+import com.gjj.gd.materialdesign_v7.widget_study.recyclerview.adapter.HeaderAndFotterAdapter;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class HeaderAndFooterActivity extends AppCompatActivity {
+public class HeaderAndFooterActivity extends BaseActivity {
 
     @BindView(R.id.recyclerView)
     RecyclerView mRecyclerView;

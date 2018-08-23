@@ -8,7 +8,7 @@
     tools:context=".widget_study.coordinatorlayout.BehaviorInstance1Activity">
 
     <TextView
-        app:layout_behavior=".coordinatorlayout.behavior.FollowBehavior"
+        app:layout_behavior="com.gjj.gd.materialdesign_v7.widget_study.coordinatorlayout.behavior.FollowBehavior"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="观察者"/>

@@ -1,4 +1,4 @@
-package com.gjj.gd.materialdesign_v7.recyclerview;
+package com.gjj.gd.materialdesign_v7.widget_study.recyclerview;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,15 +6,19 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
+import com.gjj.gd.materialdesign_v7.BaseActivity;
 import com.gjj.gd.materialdesign_v7.R;
 import com.gjj.gd.materialdesign_v7.adapter.ItemAdapter;
+import com.gjj.gd.materialdesign_v7.widget_study.recyclerview.AddRemoveItemActivity;
+import com.gjj.gd.materialdesign_v7.widget_study.recyclerview.ClassifyActivity;
+import com.gjj.gd.materialdesign_v7.widget_study.recyclerview.RefreshAndLoadMoreActivity;
 
 import java.util.HashMap;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class RecyclerViewMainActivity extends AppCompatActivity implements ItemAdapter.OnItemClickListener {
+public class RecyclerViewMainActivity extends BaseActivity implements ItemAdapter.OnItemClickListener {
 
     @BindView(R.id.recycler_view)
     RecyclerView recyclerView;

@@ -5,11 +5,12 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.gjj.gd.materialdesign_v7.BaseActivity;
 import com.gjj.gd.materialdesign_v7.Constant;
 import com.gjj.gd.materialdesign_v7.R;
 import com.gjj.gd.materialdesign_v7.widget_study.tablayout.adapter.MyFragmentPagerAdapter;
 
-public class TabLayoutActivity extends AppCompatActivity {
+public class TabLayoutActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

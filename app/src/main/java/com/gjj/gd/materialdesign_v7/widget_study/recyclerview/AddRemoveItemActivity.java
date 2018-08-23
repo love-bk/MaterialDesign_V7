@@ -1,13 +1,14 @@
-package com.gjj.gd.materialdesign_v7.recyclerview;
+package com.gjj.gd.materialdesign_v7.widget_study.recyclerview;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
+import com.gjj.gd.materialdesign_v7.BaseActivity;
 import com.gjj.gd.materialdesign_v7.R;
 import com.gjj.gd.materialdesign_v7.anim.CustomItemAnimator;
-import com.gjj.gd.materialdesign_v7.recyclerview.adapter.AddRemoveItemAdapter;
+import com.gjj.gd.materialdesign_v7.widget_study.recyclerview.adapter.AddRemoveItemAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,7 +17,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class AddRemoveItemActivity extends AppCompatActivity {
+public class AddRemoveItemActivity extends BaseActivity {
 
     @BindView(R.id.rv_goods_list)
     RecyclerView rvGoodsList;

@@ -5,6 +5,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 
+import com.gjj.gd.materialdesign_v7.BaseActivity;
 import com.gjj.gd.materialdesign_v7.R;
 import com.gjj.gd.materialdesign_v7.adapter.MyPagerAdapter;
 import com.gjj.gd.materialdesign_v7.fragment.MainFragment;
@@ -16,7 +17,7 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class Instance3Activity extends AppCompatActivity {
+public class Instance3Activity extends BaseActivity {
 
     @BindView(R.id.vp)
     ViewPager vp;

@@ -1,4 +1,4 @@
-package com.gjj.gd.materialdesign_v7.recyclerview.listener;
+package com.gjj.gd.materialdesign_v7.widget_study.recyclerview.listener;
 
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -6,8 +6,6 @@ import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.support.v7.widget.helper.ItemTouchHelper;
 import android.util.Log;
 
-import com.gjj.gd.materialdesign_v7.recyclerview.listener.OnDragVHListener;
-import com.gjj.gd.materialdesign_v7.recyclerview.listener.OnItemMoveListener;
 
 public class ItemDragHelperCallback extends ItemTouchHelper.Callback {
 
